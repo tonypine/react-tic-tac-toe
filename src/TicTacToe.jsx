@@ -113,7 +113,4 @@ class TicTacToe extends React.Component {
   }
 }
 
-TicTacToe.propTypes = { width: React.PropTypes.number };
-TicTacToe.defaultProps = { width: 3 };
-
 export default TicTacToe;
