@@ -6,5 +6,13 @@ jobs:
     steps:
       - name: Check out repository code
         uses: actions/checkout@v3
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.3.0
+      - name: Logs node version
+        run: node -v
+      - name: Logs npm version
+        run: npm -v
+      - name: Install
+        run: npm i
       - name: Building
         run: npm run build
